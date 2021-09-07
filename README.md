@@ -1,4 +1,5 @@
 # TxA CSS Server query
+https://travisguillory.github.io/TxAServerQuery/
 
 This page is used to check the Texas Arlington Counter-Strike Source server to query the current game info. and current players. The site also qqueries sister servers. Thank you to Old and Slow for providing server access since 2002.
 
