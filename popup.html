@@ -1,46 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> 
+<html >
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
   <title>TxA Adaptive Bots CSS</title>
 </head>
 
-<body class="p-1">
-
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark mb-2">
-    <div class="container-fluid">
-      <a class="navbar-brand fs-6 " href="#">Old and Slow's Adaptive Bots</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link btnServer" sid="1" href="#" id="1">Texas Arlington</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link btnServer" href="#" sid="2" id="2">Illegal Adaptive Bots</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link btnServer" href="#" sid="3" id="3">Dallas Midnight Gamers</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <br>
-  <br>
+<body > 
   <div class="row mt-0">
+    
     <div class="p-3 mb-0 bg-light rounded-3 jumbotron">
       <div class="container-fluid py-1 text-center">
-        <h1 id="serverName" class="display-5 fw-bold">Custom jumbotron</h1>
+        <h2>Old and Slow's Adaptive Bots</h2>
+        <div class="btn-group" role="group" >
+          <button type="button" class="btn btn-primary btn-sm  m-1 btnServer" href="#"sid="1"  id="1">Texas Arlington</button>
+          <button type="button" class="btn btn-primary btn-sm m-1 btnServer" href="#" sid="2" id="2">Illegal Adaptive Bots</button>
+          <button type="button" class="btn btn-primary btn-sm m-1 btnServer" href="#" sid="3" id="3">Dallas Midnight Gamers</button>
+        </div>
+        <h4 id="serverName" class=" fw-bold">Custom jumbotron</h4>
         <div class="col=1">
           <div class="row">
             <div class="col text-end p-0 mx-1">
@@ -70,68 +52,34 @@
             </div>
             <div id="currentBotCount" class="col text-start p-0 mx-1">
             </div>
+            
           </div>
         </div>
       </div>
     </div>
+  
   </div>
-  <div class="row main">
+  <div class="row main d-flex justify-content-center">
+    <div class="col d-flex justify-content-center m-1">
+    <table id="playerTable" class="sortable table m-1 p-1">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Score</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody id="playerTableBody">
 
-    <div class="container ">
-
-      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 g-2 ">
-        <div class="col mx-auto">
-         
-          <div class="card shadow-sm">
-           
-            <div class="card-body">
-
-              <table id="playerTable" class="sortable table">
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Score</th>
-                    <th>Time</th>
-                  </tr>
-                </thead>
-                <tbody id="playerTableBody">
-
-                </tbody>
-              </table>
-
-            </div>
-            <img id="mapImage" src="" alt="map image" class=" img-fluid">
-          </div>
-        </div>
-      </div>
-    </div>
+      </tbody>
+    </table>
+  </div>
   </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
-    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
-    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous">
-  </script>
-
-  <script src="script.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/sortable.js"></script>
 </body>
 
 </html>

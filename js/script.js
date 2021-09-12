@@ -1,9 +1,9 @@
-$( document ).ready(function() {
-    console.log( "ready!" );
+
+    
 
     GetServerInfo("64.182.125.196/", "27017");
 
-    $(".btnServer").click( function(e){
+    $(".btnServer").on("click", function(e){
         
         console.log($(this).attr("sid"));
         switch ($(this).attr("sid")){
@@ -56,12 +56,14 @@ $( document ).ready(function() {
         $("#currentMap").text(data.map);
         $("#currentPlayerCount").text(data.players.length + "/" + data.maxplayers);
 
-        $("#mapImage").attr("src", "http://www.texasarlingtoncs.us/stats/img/maps/halflife/cstrike/" + data.map + ".jpg"  )
-            .attr("onerror", "http://www.texasarlingtoncs.us/stats/img/maps/halflife/cstrike/" + data.map + ".png");
+        
+          
+            
         $("#currentBotCount").text(data.raw.numbots);
        
             $("#playerTableBody").empty();
-            $(data.players).each((index, player) => {
+            let players = $(data.players).sort((a, b)=>{return b.raw.score - a.raw.score})
+            $(players).each((index, player) => {
                 $("#playerTableBody").append(
                     `<tr>
                         <td>${player.name}</td>
@@ -76,4 +78,3 @@ $( document ).ready(function() {
     
 
     
-});
