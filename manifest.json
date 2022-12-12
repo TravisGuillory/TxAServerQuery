@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Who is on TxA",
     "description": "Query TxA, Illegal, and Dallas Midnight CSS to see who is playing.",
-    "version": "1.0",
+    "version": "1.1",
     
     "permissions": [],
     "action": {

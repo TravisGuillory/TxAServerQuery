@@ -5,7 +5,7 @@
 
     $(".btnServer").on("click", function(e){
         
-        console.log($(this).attr("sid"));
+        
         switch ($(this).attr("sid")){
             case "1":
                 GetServerInfo("64.182.125.196/", "27017");
@@ -29,7 +29,7 @@
     async function GetServerInfo(ip, port){
         // let baseUrl = "https://txa-css-status.herokuapp.com/";
         let baseUrl = "https://0lg7bl-8000.preview.csb.app/";
-        console.log(baseUrl + ip + port)
+       
         await $.ajax({
             url: baseUrl + ip + port, 
             dataType: "json"
