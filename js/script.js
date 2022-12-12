@@ -27,8 +27,8 @@
     });    
 
     async function GetServerInfo(ip, port){
-        let baseUrl = "https://txa-css-status.herokuapp.com/";
-        
+        // let baseUrl = "https://txa-css-status.herokuapp.com/";
+        let baseUrl = "https://travisguillory-bug-free-couscous-755xwv9qr55cp6qv-8000.preview.app.github.dev/";
         console.log(baseUrl + ip + port)
         await $.ajax(baseUrl + ip + port)
         .then(data => {
