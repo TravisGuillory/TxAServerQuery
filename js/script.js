@@ -32,7 +32,7 @@
         console.log(baseUrl + ip + port)
         await $.ajax({
             url: baseUrl + ip + port, 
-            dataType: "jsonp"
+            dataType: "json"
         })
         .then(data => {
             
