@@ -19,6 +19,10 @@
                 GetServerInfo("170.75.249.15/", "27015");
                 
                 break;
+            case "4":
+                    GetServerInfo("64.182.125.196/", "27019");
+                    
+                    break;
             default:
                 break;
                  
