@@ -32,7 +32,7 @@
 
     async function GetServerInfo(ip, port){
         // let baseUrl = "https://txa-css-status.herokuapp.com/";
-        let baseUrl = "https://0lg7bl-8000.preview.csb.app/";
+        let baseUrl = "https://valvegameserverquery.azurewebsites.net/";
        
         await $.ajax({
             url: baseUrl + ip + port, 
