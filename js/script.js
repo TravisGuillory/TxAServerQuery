@@ -12,7 +12,7 @@
                 
                 break;
             case "2":
-                GetServerInfo("108.61.236.12/", "27015");
+                GetServerInfo("74.91.119.66/", "27015");
                 
                 break;
             case "3":
